@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SiparisYonetimiD.Entities
 {
-    public class Brand
+    public class Brand : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

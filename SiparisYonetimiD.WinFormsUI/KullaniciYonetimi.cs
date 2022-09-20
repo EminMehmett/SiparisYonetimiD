@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SiparisYonetimiD.Business.Managers;
+using System;
 using System.Windows.Forms;
 
 namespace SiparisYonetimiD.WinFormsUI
@@ -15,6 +9,11 @@ namespace SiparisYonetimiD.WinFormsUI
         public KullaniciYonetimi()
         {
             InitializeComponent();
+        }
+        UserManager manager = new UserManager();
+        private void KullaniciYonetimi_Load(object sender, EventArgs e)
+        {
+            dgvKullanicilar.DataSource = manager.GetAll();
         }
     }
 }
