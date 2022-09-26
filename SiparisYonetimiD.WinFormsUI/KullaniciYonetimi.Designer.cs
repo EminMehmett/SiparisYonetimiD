@@ -62,6 +62,7 @@
             this.dgvKullanicilar.RowTemplate.Height = 24;
             this.dgvKullanicilar.Size = new System.Drawing.Size(466, 394);
             this.dgvKullanicilar.TabIndex = 0;
+            this.dgvKullanicilar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKullanicilar_CellClick);
             // 
             // btnAra
             // 
@@ -71,6 +72,7 @@
             this.btnAra.TabIndex = 2;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // groupBox1
             // 
@@ -127,6 +129,7 @@
             this.btnGuncelle.TabIndex = 13;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -137,6 +140,7 @@
             this.btnSil.TabIndex = 12;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnEkle
             // 
@@ -146,6 +150,7 @@
             this.btnEkle.TabIndex = 10;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtAdi
             // 
